@@ -1,5 +1,13 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fast weight and measurement converter for weight, length, area, volume, temperature and time."><meta name="theme-color" content="#111827"><title>MeasureMate — Weight & Measurement Calculator</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="app"><header><div><span class="badge">MEASUREMATE</span><h1>Weight & Measurement Calculator</h1><p>Simple, fast and accurate everyday conversions.</p></div><button id="theme" class="icon" aria-label="Toggle dark mode">☾</button></header>
-<section class="card"><div class="tabs" id="tabs"></div><div class="grid"><label>Value<input id="value" type="number" value="1" step="any" inputmode="decimal"></label><label>From<select id="from"></select></label><button id="swap" class="swap" aria-label="Swap units">⇄</button><label>To<select id="to"></select></label></div><div class="result"><small>RESULT</small><strong id="result">—</strong><button id="copy">Copy</button></div><div class="quick" id="quick"></div></section>
-<section class="card shortcuts"><h2>Popular conversions</h2><div id="shortcuts"></div></section><footer>MeasureMate • Free browser calculator • No data uploaded</footer></main><script src="script.js"></script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Simple weight converter. Enter a value, choose the starting unit and the unit you want, and get the answer instantly."><meta name="theme-color" content="#2563eb"><title>Weight Calculator — Simple Unit Converter</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><span class="brand">WEIGHT CALCULATOR</span><button id="theme" aria-label="Toggle dark mode">☾</button><h1>Find One Weight Unit From Two Units</h1><p>Enter a value, choose <b>From</b> and <b>To</b>. Your answer appears instantly.</p></header>
+<section class="card calculator">
+<label>Enter value<input id="value" type="number" value="1" step="any" inputmode="decimal" autofocus></label>
+<div class="units"><label>From<select id="from"></select></label><button id="swap" aria-label="Swap units">⇄</button><label>To<select id="to"></select></label></div>
+<div class="answer"><span>ANSWER</span><strong id="result">—</strong><button id="copy">Copy</button></div>
+<div class="examples"><span>Quick:</span><button data-v="1">1</button><button data-v="5">5</button><button data-v="10">10</button><button data-v="25">25</button><button data-v="50">50</button><button data-v="100">100</button></div>
+</section>
+<section class="card"><h2>Common weight units</h2><p class="muted">Milligram (mg), gram (g), kilogram (kg), quintal (q), tonne (t), ounce (oz), pound (lb), and stone (st).</p></section>
+<footer>Free • Fast • No data uploaded</footer>
+</main><script src="script.js"></script></body></html>
